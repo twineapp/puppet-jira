@@ -70,6 +70,13 @@ An example on how to use this module:
 
 If you would prefer to use Hiera then see jira.yaml file for an example.
 
+### Deployment of Standalone Puppet
+apt-get install puppet
+git clone https://github.com/twineapp/puppet-jira.git /etc/puppet/modules/jira
+git clone https://github.com/mkrakowitzer/puppet-deploy.git /etc/puppet/modules/deploy
+puppet apply /etc/puppet/modules/jira/jira.pp
+view jira at http://<IP-ADDRESS>:8080
+
 ### Fixes and Future Work
 Please feel free to raise any issues here for fixes.  I'm happy to fix them
 up.  Also feel free to make a pull request for anything so I can hopefully
