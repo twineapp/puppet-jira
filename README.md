@@ -70,6 +70,12 @@ An example on how to use this module:
 
 If you would prefer to use Hiera then see jira.yaml file for an example.
 
+### Installation of Jira Agile
+* Jira must be installed first
+* nano /opt/atlassian-jira/atlassian-jira-6.0.1-standalone/bin/setenv.sh
+* update JVM_MINIMUM_MEMORY="256m" => JVM_MINIMUM_MEMORY="512m"
+* Jira Agile is a plugin to Jira and installed through Jira's web interface, follow https://confluence.atlassian.com/display/AGILE/JIRA+Agile+Installation+and+Upgrade+Guide
+
 ### Deployment of Standalone Puppet
 apt-get install puppet
 git clone https://github.com/twineapp/puppet-jira.git /etc/puppet/modules/jira
